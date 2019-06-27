@@ -7,8 +7,8 @@ int main(void) {
 	// Active Clock of Port C
 	RCC->APB2ENR |= RCC_APB2ENR_IOPCEN;
 	
-	// GPIO_CRH_MODE13	--> Pin13 Output mode, max speed 50MHz
-	// GPIO_CRH_CNF13_0	--> Pin13 General purpose output Open-drain
+	// GPIO_CRH_MODE13	---> Pin13 Output mode, max speed 50MHz
+	// GPIO_CRH_CNF13_0	---> Pin13 General purpose output Open-drain
 	GPIOC->CRH |= (GPIO_CRH_MODE13|GPIO_CRH_CNF13_0);
 	
 
