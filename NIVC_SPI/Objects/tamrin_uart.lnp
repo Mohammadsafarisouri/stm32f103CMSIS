@@ -1,0 +1,8 @@
+--cpu Cortex-M3
+".\objects\main.o"
+".\objects\startup_stm32f10x_hd.o"
+".\objects\system_stm32f10x.o"
+--strict --scatter ".\Objects\tamrin_uart.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\tamrin_uart.map" -o .\Objects\tamrin_uart.axf
