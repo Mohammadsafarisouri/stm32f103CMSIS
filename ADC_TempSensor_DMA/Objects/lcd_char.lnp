@@ -1,0 +1,9 @@
+--cpu Cortex-M3
+".\objects\main.o"
+".\objects\adc.o"
+".\objects\startup_stm32f10x_md.o"
+".\objects\system_stm32f10x.o"
+--strict --scatter ".\Objects\lcd_char.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\lcd_char.map" -o .\Objects\lcd_char.axf
